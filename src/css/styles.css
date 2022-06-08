@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+    src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+    src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+:root{
+    --header-height: 76px;
+    --leftbar-width: 215px;
+    --font-regular: 'Proxima Nova Regular';
+    --font-bold: 'Proxima Nova Bold';
+}
+
+* {
+    letter-spacing: 0.15px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.header-profile {
+    background-color: #2ecc71;
+    width: 215px
+}
+
+.header-profile>p {
+    font-family: var(--font-regular);
+    font-size: 13px;
+}
+
+.navbar {
+    justify-content: normal!important;
+}
+
+.navbar .nav-link {
+    padding-left: 0.5em!important;
+    padding-right: 0.5em!important;
+    padding-top: 0.25em!important;
+}
+
+input[type="search"] {
+    color: #96a6a7;
+    font-size: 13px;
+    width: 105px;
+}
+
+.task-bar {
+    width: calc(100vw - var(--leftbar-width));
+}
+
+.sidebar {
+    font-family: var(--font-bold);
+    background-color: #34495e;
+    margin-top: var(--header-height);
+    width: var(--leftbar-width);
+    height: 100vh;
+    position: fixed;
+}
+
+.menu-title {
+    color: #96a6a7;
+    font-size: 16px; }
+
+.main-container {
+    position: fixed;
+    margin-left: var(--leftbar-width);
+    margin-top: var(--header-height);
+    height: 100vh;
+    width: calc(100vw - var(--leftbar-width));
+}
+
+.error-404 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.error-404>p {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 72px;
+}
+
+.error-403>img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile-name {
+    color: black;
+    padding-right: 5px;
+    font-family: var(--font-bold);
+    font-size: 20px; }
+
+.profile-avatar {
+    padding-left: calc(1rem + 17px);
+}
+
+.profile-additional-text {
+    color: gray;
+    font-family: var(--font-regular);
+}
+
+.starrating > input {
+    display: none; }
+
+.starrating > label {
+    color: #96a6a7; }
+.starrating > label:before {
+    content: "\f005";
+    margin: 2px;
+    font-size: 16px;
+    font-family: FontAwesome;
+    display: inline-block; }
+
+.starrating > input:checked ~ label, .starrating > input:hover ~ label {
+    color: #ff3908; }
+
