@@ -21,6 +21,8 @@
 
 * {
     letter-spacing: 0.15px;
+    transition: 0.3s ease;
+    font-family: var(--font-regular);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -44,7 +46,7 @@ a:link, a:visited, a:hover, a:active {
 .navbar .nav-link {
     padding-left: 0.5em!important;
     padding-right: 0.5em!important;
-    padding-top: 0.25em!important;
+    padding-top: 0.5em!important;
 }
 
 input[type="search"] {
@@ -58,7 +60,6 @@ input[type="search"] {
 }
 
 .sidebar {
-    font-family: var(--font-bold);
     background-color: #34495e;
     margin-top: var(--header-height);
     width: var(--leftbar-width);
@@ -66,9 +67,21 @@ input[type="search"] {
     position: fixed;
 }
 
+.sidebar-active {
+    background: #243342;
+    color: white;
+}
+
 .menu-title {
     color: #96a6a7;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+}
+
+.menu-title-active {
+    color: white;
+}
 
 .main-container {
     position: fixed;
@@ -90,6 +103,7 @@ input[type="search"] {
     text-align: center;
     font-family: var(--font-bold);
     font-size: 72px;
+    margin-top: -215px;
 }
 
 .error-403>img {
@@ -109,12 +123,180 @@ input[type="search"] {
 
 .profile-additional-text {
     color: gray;
-    font-family: var(--font-regular);
 }
 
+.dashboard-switch {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: none;
+}
+
+
+.dashboard-switch>a, .dashboard-switch>a:hover{
+    all: unset;
+}
+
+.dashboard-switch-active {
+    border-bottom: #2ecc71 3px solid;
+}
+
+.dashboard-container {
+    font-size: 14px;
+    color: #96a6a7;
+    background: #ecf0f1;
+    height: 100%;
+    padding: 2rem;
+}
+
+.dashboard-card {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 15px;
+}
+
+.dashboard-experience {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    margin-left: 15px;
+    border-right: #ecf0f1 1px solid;
+}
+
+.exp-title {
+    margin-bottom: 0;
+    padding: 1rem 1rem 0.5rem 32px;
+    font-size: 16px;
+}
+
+.exp-progress, .exp-progress-bars {
+    padding: 0 15px;
+}
+
+.exp-progress-amount {
+    padding: 0 0 0 15px;
+}
+
+.exp-progress {
+    min-height: var(--header-height);
+    border-bottom: #ecf0f1 1px solid;
+}
+
+.exp-progress-bars, .exp-progress-amount {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.exp-progress-amount>.number {
+    text-align: center;
+    height: 35px;
+    font-size: 32px;
+    font-family: var(--font-bold);
+    color: #2ecc71;
+}
+
+.dashboard-friends {
+    flex: 1;
+    max-width: 66.66667%;
+    margin-right: 15px;
+}
+
+.dashboard-experience, .dashboard-friends {
+    margin-top: 32px;
+    background: white;
+}
+
+.dc-headline {
+    height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dc-headline>div {
+    width: 100%;
+}
+
+.dc-headline-amount{
+    margin: 6px 0;
+    height: 35px;
+    font-family: var(--font-bold);
+    font-size: 32px;
+}
+
+.dc-textrow {
+    padding-left: 1.5em;
+    padding-top: 15px;
+    height: 50px;
+    border-bottom: #ecf0f1 1px solid;
+    background: white;
+}
+
+.dc-textrow p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 12px;
+}
+
+.dc-show-more {
+    height: 40px;
+    padding-top: 10px;
+    font-family: var(--font-bold);
+    text-align: end;
+    padding-right: 12px;
+    color: black;
+    background: white;
+}
+
+.exp-progress-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    max-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.vertical {
+    background: #ecf0f1;
+    height: 70%;
+    width: 100%;
+    transform: rotate(-180deg);
+}
+
+.vertical-bar {
+    background: #2ecc71;
+}
+
+.bold-n-black {
+    font-family: var(--font-bold);
+    color: black;
+}
+
+.dashboard-friends-title {
+    font-family: var(--font-bold);
+    font-size: 16px;
+}
+
+.dashboard-friends-title, .dashboard-friends-name {
+    text-transform: uppercase;
+}
+
+.friends-textrow {
+    padding-top: 10px;
+}
+
+.friends-textrow>p {
+    padding-right: 0;
+}
+
+.dashboard-friends-name {
+    color: blue;
+    padding-top: 2px!important;
+    font-size: 13px;
+}
+
+/*SVUSNYTO V INETI*/
 .starrating > input {
     display: none; }
-
 .starrating > label {
     color: #96a6a7; }
 .starrating > label:before {
@@ -123,7 +305,6 @@ input[type="search"] {
     font-size: 16px;
     font-family: FontAwesome;
     display: inline-block; }
-
 .starrating > input:checked ~ label, .starrating > input:hover ~ label {
     color: #ff3908; }
 
