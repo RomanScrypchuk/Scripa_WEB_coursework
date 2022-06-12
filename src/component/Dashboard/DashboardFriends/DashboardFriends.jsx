@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FriendLine from "./FriendLine";
+import {Link} from "react-router-dom";
 
 const DashboardFriends = () => {
     const [friends, setFriends] = useState([
@@ -15,7 +16,9 @@ const DashboardFriends = () => {
                 friends activity
             </div>
             {friends.map(item=><FriendLine item={item} key={item.id}></FriendLine>)}
-            <div className="dc-show-more">Show more</div>
+            <div className="dc-show-more">
+                <Link to="/nothing">Show more</Link>
+            </div>
         </div>
     );
 };

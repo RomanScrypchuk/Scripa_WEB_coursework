@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import DcHeadline from "./DCHeadline";
 import DCTextRow from "./DCTextRow";
+import {Link} from "react-router-dom";
 
 const DashboardCard = (props) => {
     const [colors, setColors] = useState({col1text: props.info.color, col1bg: "white",
@@ -20,7 +21,7 @@ const DashboardCard = (props) => {
             {text.map(item =>
                 <DCTextRow text={item} color={props.info.color}></DCTextRow>)}
             <div className="dc-show-more">
-                Show more
+                <Link to="/nothing">Show more</Link>
             </div>
         </div>
     );

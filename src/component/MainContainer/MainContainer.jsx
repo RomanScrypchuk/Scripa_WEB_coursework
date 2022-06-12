@@ -18,6 +18,8 @@ const MainContainer = () => {
                 <Route exact path='/profile' element={<Page404/>}></Route>
                 <Route exact path='/notifications' element={<Page404/>}></Route>
                 <Route exact path='/comments' element={<Page404/>}></Route>
+                <Route exact path='/exit' element={<Page404/>}></Route>
+                <Route exact path='/edit' element={<Page404/>}></Route>
                 <Route exact path='*' element={<Page403/>}></Route>
             </Routes>
         </div>
