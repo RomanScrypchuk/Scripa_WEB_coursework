@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../images/politeh_ava.jpg';
+import data from './data.json';
 
 const HeaderProfile = () => {
     return (
@@ -10,7 +11,7 @@ const HeaderProfile = () => {
                      alt=""
                      height="76"
                      width="76"/>
-                <p className="my-auto text-white me-2">ROMAN SKRYPCHUK</p>
+                <p className="my-auto text-white me-2">{data.name}</p>
             </a>
     );
 };

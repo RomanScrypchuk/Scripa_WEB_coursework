@@ -1,0 +1,14 @@
+{
+  "ProfileInfo": {
+"name": "ROMAN SKRYPCHUK",
+"act": "Student",
+"exp": 8782
+},
+"DashboardModeSwitchContainer": {
+"text": [
+["col1text1","col1text2","col1text3","col1text4"],
+["col2text1","col2text2","col2text3","col2text4"],
+["col3text1","col3text2","col3text3","col3text4"]
+]
+}
+}

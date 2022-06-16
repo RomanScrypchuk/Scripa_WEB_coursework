@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import DashboardCard from "./DashboardCard/DashboardCard";
 import DashboardExperience from "./DashboardExperience/DashboardExperience";
 import DashboardFriends from "./DashboardFriends/DashboardFriends";
+import data from "./data.json";
 
 const DashboardModeSwitchContainer = () => {
     const [cardsInfo, setCardsInfo] = useState([
@@ -10,11 +11,7 @@ const DashboardModeSwitchContainer = () => {
         {id: 3, col1Name: "following exams", col2Name: "done exams", col1Amount: "19", col2Amount: "88", color: "#49b691"}
     ]);
 
-    const [text, setText] = useState([
-        ["col1text1","col1text2","col1text3","col1text4"],
-        ["col2text1","col2text2","col2text3","col2text4"],
-        ["col3text1","col3text2","col3text3","col3text4"]
-    ]);
+    const [text, setText] = useState(data.DashboardModeSwitchContainer.text);
 
     return (
         <div className="dashboard-container">
