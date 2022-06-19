@@ -1,6 +1,6 @@
 import React from 'react';
 import LeftNavBar from "../LeftNavBar/LeftNavBar";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import {createBrowserHistory} from 'history';
 import MainContainer from "../MainContainer/MainContainer";
 
